@@ -1,8 +1,13 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+jest.mock("./components/Stopwatch/Stopwatch", () => () => (
+  <div>Mocked Stopwatch</div>
+));
+
+describe("App Component", () => {
+  it("should render the Stopwatch component", () => {
+    render(<App />);
+    expect(screen.getByText("Mocked Stopwatch")).toBeInTheDocument();
+  });
 });
