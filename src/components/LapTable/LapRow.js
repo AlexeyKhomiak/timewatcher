@@ -23,24 +23,24 @@ const LapRow = ({ index, lap, previousLapTime, formatTime, updateComment }) => {
   } = formatTime(lap.time);
 
   return (
-    <tr>
-      <td>{lap.lapNumber}</td>
-      <td>
+    <div className="timer-line">
+      <div>{lap.lapNumber}</div>
+      <div>
         {minutes}:{seconds}.
         <span className="milliseconds-lap">{milliseconds}</span>
-      </td>
-      <td>
+      </div>
+      <div>
         {totalMinutes}:{totalSeconds}.
         <span className="milliseconds-lap">{totalMilliseconds}</span>
-      </td>
-      <td>
+      </div>
+      <div>
         <textarea
           value={comment}
           onChange={handleCommentChange}
           placeholder="Add comment"
         />
-      </td>
-    </tr>
+      </div>
+    </div>
   );
 };
 

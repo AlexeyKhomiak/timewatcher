@@ -1,9 +1,10 @@
 import React from "react";
 import Stopwatch from "./components/Stopwatch/Stopwatch";
+import './styles/main.css';
 
 const App = () => {
   return (
-    <div>
+    <div className="timerwrap">
       <Stopwatch />
     </div>
   );
