@@ -13,10 +13,11 @@ const LapRow = ({ index, lap, previousLapTime, formatTime, updateComment }) => {
     updateComment(index, newComment);
   };
 
-  const { minutes, seconds, milliseconds } = formatTime(
+  const { hours, minutes, seconds, milliseconds } = formatTime(
     lap.time - previousLapTime
   );
   const {
+    hours: totalHours,
     minutes: totalMinutes,
     seconds: totalSeconds,
     milliseconds: totalMilliseconds,
@@ -26,10 +27,12 @@ const LapRow = ({ index, lap, previousLapTime, formatTime, updateComment }) => {
     <div className="timer-line">
       <div>{lap.lapNumber}</div>
       <div>
+        {hours && `${hours}:`}
         {minutes}:{seconds}.
         <span className="milliseconds-lap">{milliseconds}</span>
       </div>
       <div>
+        {totalHours && `${totalHours}:`}
         {totalMinutes}:{totalSeconds}.
         <span className="milliseconds-lap">{totalMilliseconds}</span>
       </div>
