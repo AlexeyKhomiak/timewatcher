@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/timewatcher/static/css/main.6d49cfcd.css",
-    "main.js": "/timewatcher/static/js/main.6f91d254.js",
+    "main.css": "/timewatcher/static/css/main.081da445.css",
+    "main.js": "/timewatcher/static/js/main.51ef7892.js",
     "static/js/453.ba344bc8.chunk.js": "/timewatcher/static/js/453.ba344bc8.chunk.js",
     "index.html": "/timewatcher/index.html",
-    "main.6d49cfcd.css.map": "/timewatcher/static/css/main.6d49cfcd.css.map",
-    "main.6f91d254.js.map": "/timewatcher/static/js/main.6f91d254.js.map",
+    "main.081da445.css.map": "/timewatcher/static/css/main.081da445.css.map",
+    "main.51ef7892.js.map": "/timewatcher/static/js/main.51ef7892.js.map",
     "453.ba344bc8.chunk.js.map": "/timewatcher/static/js/453.ba344bc8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d49cfcd.css",
-    "static/js/main.6f91d254.js"
+    "static/css/main.081da445.css",
+    "static/js/main.51ef7892.js"
   ]
 }
